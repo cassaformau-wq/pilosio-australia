@@ -89,11 +89,11 @@ export default function Layout({ children, currentPageName }) {
       <footer className="bg-[#0d2b4e] text-white mt-auto">
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-1 mb-3">
-              <span className="text-[#e31e24] text-2xl font-black italic">P</span>
-              <span className="text-white font-black uppercase tracking-wider text-lg">PILOSIO</span>
+            <div className="flex items-center gap-0 leading-none mb-1">
+              <span className="text-[#e31e24] font-black italic" style={{fontSize:'24px', fontFamily:'Arial Black, sans-serif'}}>P</span>
+              <span className="text-white font-black uppercase" style={{fontSize:'19px', fontFamily:'Arial Black, sans-serif', letterSpacing:'2px'}}>ILOSIO</span>
             </div>
-            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">Scaffolding & Formwork Australia</p>
+            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">Scaffolding & Structures · Australia</p>
             <p className="text-white/70 text-sm leading-relaxed">
               Over 60 years of Italian engineering excellence, now serving the Australian construction industry.
             </p>
