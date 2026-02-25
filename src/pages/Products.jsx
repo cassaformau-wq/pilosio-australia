@@ -57,31 +57,6 @@ const products = [
     img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
   },
   {
-    name: "Vertical Formwork",
-    category: "Formwork",
-    desc: "High-quality vertical formwork solutions engineered for precision concrete placement in walls, columns, and core structures.",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-  },
-  {
-    name: "Slab Formwork",
-    category: "Formwork",
-    desc: "Efficient and safe slab forming systems designed for rapid construction cycles and high-quality concrete finishes.",
-    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
-    highlight: "Popular",
-  },
-  {
-    name: "Shoring",
-    category: "Formwork",
-    desc: "Robust propping systems providing reliable temporary support for formwork during concrete curing.",
-    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
-  },
-  {
-    name: "Special Formwork",
-    category: "Formwork",
-    desc: "Custom-engineered formwork solutions for complex architectural shapes and challenging structural requirements.",
-    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
-  },
-  {
     name: "Suspended Structures",
     category: "Suspended Structures",
     desc: "Innovative suspended access and working platforms for maintenance, renovation, and event applications.",
