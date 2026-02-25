@@ -120,23 +120,44 @@ export default function Home() {
 
       {/* Category Cards */}
       <section className="grid grid-cols-1 md:grid-cols-3 gap-0">
-        {categories.map((cat) => (
-          <Link key={cat.label} to={createPageUrl(cat.page)} className="relative group overflow-hidden" style={{ minHeight: "260px" }}>
-            <img
-              src={cat.img}
-              alt={cat.label}
-              className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-[#0d2b4e]/60 group-hover:bg-[#0d2b4e]/70 transition-colors" />
-            <div className="absolute inset-0 flex flex-col items-center justify-end pb-8">
-              <div className="text-[#e31e24] text-3xl font-black italic mb-2">P</div>
-              <span className="text-white font-black uppercase tracking-widest text-lg md:text-xl text-center px-4">
-                {cat.label}
-              </span>
-              <div className="mt-3 w-8 h-0.5 bg-[#e31e24]" />
+        {categories.map((cat) => {
+          const inner = (
+            <div className="relative group overflow-hidden" style={{ minHeight: "260px" }}>
+              <img
+                src={cat.img}
+                alt={cat.label}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-[#0d2b4e]/60 group-hover:bg-[#0d2b4e]/70 transition-colors" />
+              <div className="absolute inset-0 flex flex-col items-center justify-end pb-8">
+                {cat.external ? (
+                  /* Cassaform logo for Formwork */
+                  <div className="bg-white px-6 py-3 mb-3 shadow-lg">
+                    <span className="text-[#0d2b4e] font-black text-xl tracking-tight">Cassaform</span>
+                  </div>
+                ) : (
+                  <div className="text-[#e31e24] text-3xl font-black italic mb-2">P</div>
+                )}
+                <span className="text-white font-black uppercase tracking-widest text-lg md:text-xl text-center px-4">
+                  {cat.label}
+                </span>
+                {cat.external && (
+                  <span className="text-white/70 text-xs mt-1 tracking-wider">cassaform.com.au ↗</span>
+                )}
+                <div className="mt-3 w-8 h-0.5 bg-[#e31e24]" />
+              </div>
             </div>
-          </Link>
-        ))}
+          );
+          return cat.external ? (
+            <a key={cat.label} href={cat.href} target="_blank" rel="noopener noreferrer" className="block">
+              {inner}
+            </a>
+          ) : (
+            <Link key={cat.label} to={createPageUrl(cat.page)}>
+              {inner}
+            </Link>
+          );
+        })}
       </section>
 
       {/* Products Grid */}
