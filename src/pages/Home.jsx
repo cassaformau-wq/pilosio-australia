@@ -29,16 +29,21 @@ const categories = [
   {
     label: "Scaffolding",
     img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+    href: null,
     page: "Products",
   },
   {
     label: "Formwork",
     img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
-    page: "Products",
+    href: "https://cassaform.com.au",
+    page: null,
+    logo: "Cassaform",
+    external: true,
   },
   {
     label: "Suspended Structures",
     img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    href: null,
     page: "Products",
   },
 ];
