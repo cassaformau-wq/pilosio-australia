@@ -39,12 +39,23 @@ export default function Layout({ children, currentPageName }) {
 
           {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center">
-            <span className="text-2xl md:text-3xl font-black tracking-tight flex items-center gap-1">
-              <span className="text-[#e31e24] text-3xl md:text-4xl font-black italic">P</span>
-              <span className="text-[#0d2b4e] font-black uppercase tracking-wider">PILOSIO</span>
+            <img
+              src="https://pilosio.com/wp-content/themes/theme-pilosio/build/img/logo-pilosio.png"
+              alt="Pilosio Australia"
+              className="h-8 md:h-10 object-contain"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.nextSibling.style.display = 'flex';
+              }}
+            />
+            <span className="hidden flex-col items-center">
+              <span className="text-2xl font-black tracking-tight flex items-center gap-1">
+                <span className="text-[#e31e24] text-3xl font-black italic">P</span>
+                <span className="text-[#0d2b4e] font-black uppercase tracking-wider">PILOSIO</span>
+              </span>
             </span>
-            <span className="text-[9px] md:text-[10px] tracking-widest text-[#0d2b4e] uppercase font-medium -mt-1">
-              Scaffolding & Formwork Australia
+            <span className="text-[9px] md:text-[10px] tracking-widest text-[#0d2b4e] uppercase font-medium mt-0.5">
+              Australia
             </span>
           </Link>
 
