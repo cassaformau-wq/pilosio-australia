@@ -84,13 +84,12 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
           <div className="relative z-10 text-center px-8">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="text-[#e31e24] text-7xl md:text-9xl font-black italic leading-none">P</span>
+            {/* Pilosio logo large */}
+            <div className="flex items-center justify-center gap-0 leading-none mb-2">
+              <span className="text-[#e31e24] font-black italic" style={{fontSize:'80px', fontFamily:'Arial Black, sans-serif', lineHeight:1}}>P</span>
+              <span className="text-white font-black uppercase" style={{fontSize:'60px', fontFamily:'Arial Black, sans-serif', letterSpacing:'4px', lineHeight:1}}>ILOSIO</span>
             </div>
-            <div className="text-white text-4xl md:text-6xl font-black uppercase tracking-widest leading-none mb-2">
-              PILOSIO
-            </div>
-            <div className="text-white/60 text-sm tracking-widest uppercase mb-6">Australia</div>
+            <div className="text-white/60 text-sm tracking-[6px] uppercase mb-6">Australia</div>
             <div className="inline-block border border-[#e31e24] text-[#e31e24] px-5 py-2 text-xs tracking-widest uppercase font-bold">
               60+ Years Since 1961
             </div>
