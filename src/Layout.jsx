@@ -40,7 +40,7 @@ export default function Layout({ children, currentPageName }) {
           {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center">
             <img
-              src="https://pilosio.com/wp-content/uploads/2022/09/Logo_Pilosio.svg"
+              src="https://pilosio.com/wp-content/themes/theme-pilosio/build/svg/logo-pilosio.svg"
               alt="Pilosio Australia"
               className="h-10 md:h-12 object-contain"
             />
