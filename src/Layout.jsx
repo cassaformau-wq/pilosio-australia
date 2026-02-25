@@ -37,16 +37,14 @@ export default function Layout({ children, currentPageName }) {
             <span className="hidden sm:inline">Menu</span>
           </button>
 
-          {/* Logo */}
-          <Link to={createPageUrl("Home")} className="flex flex-col items-center">
-            <img
-              src="https://pilosio.com/wp-content/uploads/2023/01/pilosio-logo.png"
-              alt="Pilosio Australia"
-              className="h-8 md:h-10 object-contain"
-              onError={(e) => { e.target.src = "https://pilosio.com/wp-content/themes/theme-pilosio/build/svg/logo-pilosio.svg"; }}
-            />
-            <span className="text-[8px] tracking-widest text-[#0d2b4e] uppercase font-semibold mt-0.5">
-              Australia
+          {/* Logo - using inline SVG matching Pilosio brand */}
+          <Link to={createPageUrl("Home")} className="flex flex-col items-center group">
+            <div className="flex items-center gap-0 leading-none">
+              <span className="text-[#e31e24] font-black italic" style={{fontSize:'28px', fontFamily:'Arial Black, sans-serif'}}>P</span>
+              <span className="text-[#0d2b4e] font-black uppercase" style={{fontSize:'22px', fontFamily:'Arial Black, sans-serif', letterSpacing:'2px'}}>ILOSIO</span>
+            </div>
+            <span className="text-[8px] tracking-[3px] text-[#0d2b4e] uppercase font-semibold -mt-0.5">
+              Scaffolding &amp; Structures · Australia
             </span>
           </Link>
 
