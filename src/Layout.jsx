@@ -40,20 +40,10 @@ export default function Layout({ children, currentPageName }) {
           {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center">
             <img
-              src="https://pilosio.com/wp-content/themes/theme-pilosio/build/img/logo-pilosio.png"
+              src="https://pilosio.com/wp-content/uploads/2022/09/Logo_Pilosio.svg"
               alt="Pilosio Australia"
-              className="h-8 md:h-10 object-contain"
-              onError={(e) => {
-                e.target.style.display = 'none';
-                e.target.nextSibling.style.display = 'flex';
-              }}
+              className="h-10 md:h-12 object-contain"
             />
-            <span className="hidden flex-col items-center">
-              <span className="text-2xl font-black tracking-tight flex items-center gap-1">
-                <span className="text-[#e31e24] text-3xl font-black italic">P</span>
-                <span className="text-[#0d2b4e] font-black uppercase tracking-wider">PILOSIO</span>
-              </span>
-            </span>
             <span className="text-[9px] md:text-[10px] tracking-widest text-[#0d2b4e] uppercase font-medium mt-0.5">
               Australia
             </span>
