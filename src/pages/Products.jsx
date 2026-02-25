@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ChevronRight } from "lucide-react";
 
-const categories = ["All", "Scaffolding", "Formwork", "Suspended Structures"];
+const categories = ["All", "Scaffolding", "Suspended Structures"];
 
 const products = [
   {
