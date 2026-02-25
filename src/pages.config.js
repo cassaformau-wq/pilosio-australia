@@ -51,6 +51,16 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import ProductMultidirectional from './pages/ProductMultidirectional';
+import ProductFrameSocket from './pages/ProductFrameSocket';
+import ProductFramePin from './pages/ProductFramePin';
+import ProductAluminiumScaffolding from './pages/ProductAluminiumScaffolding';
+import ProductTubeCoupler from './pages/ProductTubeCoupler';
+import ProductMobileTowers from './pages/ProductMobileTowers';
+import ProductFlydeck from './pages/ProductFlydeck';
+import ProductIXITruss from './pages/ProductIXITruss';
+import ProductSuspended from './pages/ProductSuspended';
+import ProductEventStructures from './pages/ProductEventStructures';
 import __Layout from './Layout.jsx';
 
 
@@ -59,6 +69,16 @@ export const PAGES = {
     "About": About,
     "Products": Products,
     "Contact": Contact,
+    "ProductMultidirectional": ProductMultidirectional,
+    "ProductFrameSocket": ProductFrameSocket,
+    "ProductFramePin": ProductFramePin,
+    "ProductAluminiumScaffolding": ProductAluminiumScaffolding,
+    "ProductTubeCoupler": ProductTubeCoupler,
+    "ProductMobileTowers": ProductMobileTowers,
+    "ProductFlydeck": ProductFlydeck,
+    "ProductIXITruss": ProductIXITruss,
+    "ProductSuspended": ProductSuspended,
+    "ProductEventStructures": ProductEventStructures,
 }
 
 export const pagesConfig = {
