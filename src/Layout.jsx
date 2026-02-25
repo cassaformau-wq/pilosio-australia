@@ -117,6 +117,12 @@ export default function Layout({ children, currentPageName }) {
               <li>✉️ info@pilosioaustralia.com.au</li>
               <li>📍 Sydney, NSW, Australia</li>
             </ul>
+            <div className="mt-4 pt-4 border-t border-white/10">
+              <p className="text-white/40 text-xs mb-1">Formwork solutions by</p>
+              <a href="https://cassaform.com.au" target="_blank" rel="noopener noreferrer" className="text-white font-bold hover:text-[#e31e24] transition-colors text-sm">
+                Cassaform ↗
+              </a>
+            </div>
           </div>
         </div>
         <div className="border-t border-white/10 text-center py-4 text-white/40 text-xs">
