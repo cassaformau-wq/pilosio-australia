@@ -39,21 +39,13 @@ export default function Layout({ children, currentPageName }) {
 
           {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center">
-            {/* Pilosio logo reconstructed to match brand */}
-            <div className="flex items-center gap-1.5">
-              <svg width="36" height="36" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M30 5C16.2 5 5 16.2 5 30s11.2 25 25 25 25-11.2 25-25S43.8 5 30 5z" fill="#0d2b4e"/>
-                <path d="M20 18h12c4.4 0 8 3.6 8 8s-3.6 8-8 8H26v8h-6V18z" fill="white"/>
-                <path d="M26 28h6c1.1 0 2-.9 2-2s-.9-2-2-2h-6v4z" fill="#e31e24"/>
-              </svg>
-              <div className="flex flex-col leading-none">
-                <span className="text-xl font-black italic tracking-tight" style={{color:'#e31e24', fontFamily:'sans-serif'}}>
-                  <span style={{color:'#e31e24'}}>P</span><span style={{color:'#0d2b4e'}}>ILOSIO</span>
-                </span>
-                <span className="text-[7px] tracking-widest text-[#0d2b4e] uppercase font-semibold">Ponteggi e Casseforme</span>
-              </div>
-            </div>
-            <span className="text-[9px] md:text-[10px] tracking-widest text-[#0d2b4e] uppercase font-medium mt-0.5">
+            <img
+              src="https://pilosio.com/wp-content/uploads/2023/01/pilosio-logo.png"
+              alt="Pilosio Australia"
+              className="h-8 md:h-10 object-contain"
+              onError={(e) => { e.target.src = "https://pilosio.com/wp-content/themes/theme-pilosio/build/svg/logo-pilosio.svg"; }}
+            />
+            <span className="text-[8px] tracking-widest text-[#0d2b4e] uppercase font-semibold mt-0.5">
               Australia
             </span>
           </Link>
