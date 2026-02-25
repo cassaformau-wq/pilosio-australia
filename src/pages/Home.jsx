@@ -165,11 +165,11 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {products.map((p) => (
             <Link
-              key={p}
-              to={createPageUrl("Products")}
+              key={p.name}
+              to={createPageUrl(p.page)}
               className="border border-gray-200 hover:border-[#e31e24] hover:bg-red-50 transition-all p-4 flex items-center justify-between group"
             >
-              <span className="text-[#0d2b4e] text-sm font-semibold group-hover:text-[#e31e24] transition-colors">{p}</span>
+              <span className="text-[#0d2b4e] text-sm font-semibold group-hover:text-[#e31e24] transition-colors">{p.name}</span>
               <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#e31e24] flex-shrink-0" />
             </Link>
           ))}
