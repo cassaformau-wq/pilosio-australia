@@ -1,0 +1,216 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { createPageUrl } from "@/utils";
+import { ChevronRight } from "lucide-react";
+
+const categories = ["All", "Scaffolding", "Formwork", "Suspended Structures"];
+
+const products = [
+  {
+    name: "Multidirectional Scaffolding",
+    category: "Scaffolding",
+    desc: "Extremely flexible and modular system suitable for multiple applications, ensuring fast and safe assembly thanks to wedge connections and rosettes welded every 50cm.",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+    highlight: "Most Popular",
+  },
+  {
+    name: "Frame Scaffolding (Socket)",
+    category: "Scaffolding",
+    desc: "Socket-frame scaffolding system offering a robust support structure for construction and maintenance work, ensuring safety and stability.",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+  },
+  {
+    name: "Frame Scaffolding (Pin)",
+    category: "Scaffolding",
+    desc: "Steel frame scaffolding, easy and fast to assemble, ideal for facade work. Pins welded on the frames simplify assembly without special tools.",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+  },
+  {
+    name: "Aluminium Scaffolding",
+    category: "Scaffolding",
+    desc: "Frame scaffolding specifically designed for short-duration interventions where assembly and disassembly must be fast, simple, and safe.",
+    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+    highlight: "New",
+  },
+  {
+    name: "Tube & Coupler",
+    category: "Scaffolding",
+    desc: "Traditional scaffolding system that allows high flexibility and adaptability, suitable for complex configurations and variable work environments.",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+  },
+  {
+    name: "Mobile Towers",
+    category: "Scaffolding",
+    desc: "Mobile and lightweight structures, easy to assemble and disassemble, used for low-height indoor or outdoor work.",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+  },
+  {
+    name: "Electric Scaffolding",
+    category: "Scaffolding",
+    desc: "Motorised scaffolding solutions for increased productivity and safety on large-scale projects.",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+  },
+  {
+    name: "Service Stairs",
+    category: "Scaffolding",
+    desc: "Safe and compliant stair access systems integrated with scaffolding structures for efficient site access.",
+    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+  },
+  {
+    name: "Vertical Formwork",
+    category: "Formwork",
+    desc: "High-quality vertical formwork solutions engineered for precision concrete placement in walls, columns, and core structures.",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+  },
+  {
+    name: "Slab Formwork",
+    category: "Formwork",
+    desc: "Efficient and safe slab forming systems designed for rapid construction cycles and high-quality concrete finishes.",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+    highlight: "Popular",
+  },
+  {
+    name: "Shoring",
+    category: "Formwork",
+    desc: "Robust propping systems providing reliable temporary support for formwork during concrete curing.",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+  },
+  {
+    name: "Special Formwork",
+    category: "Formwork",
+    desc: "Custom-engineered formwork solutions for complex architectural shapes and challenging structural requirements.",
+    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+  },
+  {
+    name: "Suspended Structures",
+    category: "Suspended Structures",
+    desc: "Innovative suspended access and working platforms for maintenance, renovation, and event applications.",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    highlight: "Innovative",
+  },
+  {
+    name: "Flydeck System",
+    category: "Suspended Structures",
+    desc: "Revolutionary patented intrados floor system that simplifies and makes it safer to set up suspended structures.",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    highlight: "Patented",
+  },
+  {
+    name: "IXI Aluminium Truss",
+    category: "Suspended Structures",
+    desc: "Innovative aluminium truss beam offering exceptional strength-to-weight ratio for spanning large distances.",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+  },
+  {
+    name: "Event Structures",
+    category: "Suspended Structures",
+    desc: "Specialised temporary structures for concerts, exhibitions, and large-scale events, meeting Australian safety standards.",
+    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+  },
+];
+
+export default function Products() {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filtered = activeCategory === "All"
+    ? products
+    : products.filter((p) => p.category === activeCategory);
+
+  return (
+    <div>
+      {/* Header */}
+      <div className="bg-[#0d2b4e] text-white py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-white/50 text-sm mb-2">
+            <Link to={createPageUrl("Home")} className="hover:text-white">Home</Link> / Products
+          </div>
+          <h1 className="text-3xl md:text-5xl font-black uppercase tracking-wide">Our Products</h1>
+        </div>
+      </div>
+
+      {/* Intro */}
+      <div className="bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 py-8">
+          <p className="text-gray-600 max-w-3xl leading-relaxed">
+            Explore Pilosio Australia's full range of scaffolding, formwork, and suspended structure solutions — 
+            each engineered in Italy and certified to Australian standards for safety, efficiency, and ease of assembly.
+          </p>
+        </div>
+      </div>
+
+      {/* Filter Tabs */}
+      <div className="bg-[#f5f7fa] border-b border-gray-200 sticky top-[80px] z-30">
+        <div className="max-w-7xl mx-auto px-4 flex gap-0 overflow-x-auto">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-6 py-4 font-bold uppercase tracking-wider text-sm whitespace-nowrap border-b-2 transition-colors ${
+                activeCategory === cat
+                  ? "border-[#e31e24] text-[#e31e24] bg-white"
+                  : "border-transparent text-gray-500 hover:text-[#0d2b4e]"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Products Grid */}
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {filtered.map((product) => (
+            <div key={product.name} className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col">
+              <div className="relative overflow-hidden h-44">
+                <img
+                  src={product.img}
+                  alt={product.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                {product.highlight && (
+                  <div className="absolute top-3 left-3 bg-[#e31e24] text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
+                    {product.highlight}
+                  </div>
+                )}
+              </div>
+              <div className="p-5 flex flex-col flex-1">
+                <div className="text-xs text-[#e31e24] font-bold uppercase tracking-wider mb-1">{product.category}</div>
+                <h3 className="text-[#0d2b4e] font-black uppercase tracking-wide text-sm mb-2">{product.name}</h3>
+                <p className="text-gray-500 text-xs leading-relaxed flex-1">{product.desc}</p>
+                <Link
+                  to={createPageUrl("Contact")}
+                  className="mt-4 flex items-center gap-1 text-[#e31e24] text-xs font-bold uppercase tracking-wider hover:gap-2 transition-all"
+                >
+                  Enquire Now <ChevronRight className="w-3 h-3" />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Certifications */}
+      <section className="bg-[#0d2b4e] text-white py-12 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-center gap-3 mb-8">
+            <span className="text-[#e31e24] text-4xl font-black italic">P</span>
+            <h2 className="text-white text-xl md:text-2xl font-black uppercase tracking-wide">Certifications & Standards</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              { title: "Australian Standards", desc: "All products comply with relevant Australian Standards (AS/NZS) for scaffolding and formwork safety." },
+              { title: "European Certifications", desc: "Pilosio products are certified to EN 12810, EN 12811 and hold the European Quality Mark IGQ-SQ." },
+              { title: "Quality Manufacturing", desc: "90% of components are manufactured in-house at Pilosio's 45,000m² facility in Udine, Italy." },
+            ].map((c) => (
+              <div key={c.title} className="border border-white/20 p-6">
+                <h3 className="font-black uppercase tracking-wide text-sm mb-3 text-[#e31e24]">{c.title}</h3>
+                <p className="text-white/70 text-sm leading-relaxed">{c.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
