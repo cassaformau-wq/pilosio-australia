@@ -160,33 +160,49 @@ export default function Products() {
       {/* Products Grid */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filtered.map((product) => (
-            <div key={product.name} className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col">
-              <div className="relative overflow-hidden h-44">
-                <img
-                  src={product.img}
-                  alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                {product.highlight && (
-                  <div className="absolute top-3 left-3 bg-[#e31e24] text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
-                    {product.highlight}
+          {filtered.map((product) => {
+            const cardInner = (
+              <>
+                <div className="relative overflow-hidden h-44">
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  {product.highlight && (
+                    <div className="absolute top-3 left-3 bg-[#e31e24] text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
+                      {product.highlight}
+                    </div>
+                  )}
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <div className="text-xs text-[#e31e24] font-bold uppercase tracking-wider mb-1">{product.category}</div>
+                  <h3 className="text-[#0d2b4e] font-black uppercase tracking-wide text-sm mb-2">{product.name}</h3>
+                  <p className="text-gray-500 text-xs leading-relaxed flex-1">{product.desc}</p>
+                  <div className="mt-4 flex items-center gap-1 text-[#e31e24] text-xs font-bold uppercase tracking-wider group-hover:gap-2 transition-all">
+                    {product.page ? "Discover More" : "Enquire Now"} <ChevronRight className="w-3 h-3" />
                   </div>
-                )}
-              </div>
-              <div className="p-5 flex flex-col flex-1">
-                <div className="text-xs text-[#e31e24] font-bold uppercase tracking-wider mb-1">{product.category}</div>
-                <h3 className="text-[#0d2b4e] font-black uppercase tracking-wide text-sm mb-2">{product.name}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed flex-1">{product.desc}</p>
-                <Link
-                  to={createPageUrl("Contact")}
-                  className="mt-4 flex items-center gap-1 text-[#e31e24] text-xs font-bold uppercase tracking-wider hover:gap-2 transition-all"
-                >
-                  Enquire Now <ChevronRight className="w-3 h-3" />
-                </Link>
-              </div>
-            </div>
-          ))}
+                </div>
+              </>
+            );
+            return product.page ? (
+              <Link
+                key={product.name}
+                to={createPageUrl(product.page)}
+                className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
+              >
+                {cardInner}
+              </Link>
+            ) : (
+              <Link
+                key={product.name}
+                to={createPageUrl("Contact")}
+                className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
+              >
+                {cardInner}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
