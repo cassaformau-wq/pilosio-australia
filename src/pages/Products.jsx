@@ -105,11 +105,24 @@ export default function Products() {
 
       {/* Intro */}
       <div className="bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <p className="text-gray-600 max-w-3xl leading-relaxed">
-            Explore Pilosio Australia's full range of scaffolding, formwork, and suspended structure solutions — 
-            each engineered in Italy and certified to Australian standards for safety, efficiency, and ease of assembly.
+        <div className="max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-gray-600 max-w-2xl leading-relaxed">
+            Explore Pilosio Australia's scaffolding and suspended structure solutions — 
+            engineered in Italy and certified to Australian standards for safety, efficiency, and ease of assembly.
           </p>
+          {/* Formwork redirect banner */}
+          <a
+            href="https://cassaform.com.au"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 flex items-center gap-4 border-2 border-[#0d2b4e] px-5 py-3 hover:bg-[#0d2b4e] group transition-colors"
+          >
+            <div className="flex flex-col">
+              <span className="text-xs text-gray-400 uppercase tracking-wider group-hover:text-white/60 transition-colors">Looking for Formwork?</span>
+              <span className="text-[#0d2b4e] font-black text-lg tracking-tight group-hover:text-white transition-colors">Cassaform ↗</span>
+              <span className="text-xs text-gray-400 group-hover:text-white/60 transition-colors">cassaform.com.au</span>
+            </div>
+          </a>
         </div>
       </div>
 
