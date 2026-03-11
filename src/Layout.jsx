@@ -37,15 +37,13 @@ export default function Layout({ children, currentPageName }) {
             <span className="hidden sm:inline">Menu</span>
           </button>
 
-          {/* Logo - using inline SVG matching Pilosio brand */}
+          {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center group">
-            <div className="flex items-center gap-0 leading-none">
-              <span className="text-[#e31e24] font-black italic" style={{fontSize:'28px', fontFamily:'Arial Black, sans-serif'}}>P</span>
-              <span className="text-[#0d2b4e] font-black uppercase" style={{fontSize:'22px', fontFamily:'Arial Black, sans-serif', letterSpacing:'2px'}}>ILOSIO</span>
-            </div>
-            <span className="text-[8px] tracking-[3px] text-[#0d2b4e] uppercase font-semibold -mt-0.5">
-              Scaffolding &amp; Structures · Australia
-            </span>
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/2ebbde9a6_image.png"
+              alt="Pilosio Australia"
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Right */}
@@ -89,11 +87,12 @@ export default function Layout({ children, currentPageName }) {
       <footer className="bg-[#0d2b4e] text-white mt-auto">
         <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <div className="flex items-center gap-0 leading-none mb-1">
-              <span className="text-[#e31e24] font-black italic" style={{fontSize:'24px', fontFamily:'Arial Black, sans-serif'}}>P</span>
-              <span className="text-white font-black uppercase" style={{fontSize:'19px', fontFamily:'Arial Black, sans-serif', letterSpacing:'2px'}}>ILOSIO</span>
-            </div>
-            <p className="text-xs uppercase tracking-widest text-white/60 mb-4">Scaffolding & Structures · Australia</p>
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/2ebbde9a6_image.png"
+              alt="Pilosio Australia"
+              className="h-16 w-auto object-contain mb-3"
+              style={{filter: 'brightness(0) invert(1)'}}
+            />
             <p className="text-white/70 text-sm leading-relaxed">
               Over 60 years of Italian engineering excellence, now serving the Australian construction industry.
             </p>
