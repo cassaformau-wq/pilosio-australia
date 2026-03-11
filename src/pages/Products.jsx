@@ -210,7 +210,7 @@ export default function Products() {
       <section className="bg-[#0d2b4e] text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <span className="text-[#e31e24] text-4xl font-black italic">P</span>
+            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
             <h2 className="text-white text-xl md:text-2xl font-black uppercase tracking-wide">Certifications & Standards</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
