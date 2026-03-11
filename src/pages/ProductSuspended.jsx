@@ -9,7 +9,7 @@ const systems = [
     desc: "Patented and certified soffit plane for bridge and suspended structure maintenance. Dramatically reduces set-up time and improves worker safety.",
     highlight: "Patented",
     page: "ProductFlydeck",
-    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg",
   },
   {
     name: "IXI Aluminium Truss",
@@ -17,14 +17,14 @@ const systems = [
     desc: "Groundbreaking modular aluminium beam — 5× lighter than steel, ringlock compatible, and suitable for bridges, large-span roofs, and elevated platforms.",
     highlight: "Innovative",
     page: "ProductIXITruss",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2025/07/IXI-Truss-cover.jpg",
   },
   {
     name: "Event Structures",
     code: "Events",
     desc: "Specialised temporary structures for concerts, exhibitions, and large-scale events. Engineered to meet Australian safety standards.",
     page: "ProductEventStructures",
-    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/PALCHi-cover.jpg",
   },
 ];
 
@@ -52,7 +52,7 @@ export default function ProductSuspended() {
       {/* Hero */}
       <div className="relative h-64 md:h-80 overflow-hidden">
         <img
-          src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&q=80"
+          src="https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg"
           alt="Suspended Structures"
           className="w-full h-full object-cover"
         />
