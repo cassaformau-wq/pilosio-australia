@@ -6,7 +6,7 @@ export default function ProductIXITruss() {
       category="Suspended Structures"
       title="IXI Aluminium Truss"
       subtitle="Groundbreaking modular aluminium beam for bridges, large-span roofs, and elevated platforms"
-      heroImg="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2025/07/IXI-Truss-cover.jpg"
       highlight="Innovative"
       breadcrumb={[{ label: "IXI Aluminium Truss" }]}
       characteristics={[

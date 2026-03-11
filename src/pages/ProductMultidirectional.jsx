@@ -6,7 +6,7 @@ export default function ProductMultidirectional() {
       category="Scaffolding"
       title="Multidirectional Scaffolding"
       subtitle="MP — A versatile and durable solid scaffolding system"
-      heroImg="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg"
       highlight="Most Popular"
       breadcrumb={[{ label: "Multidirectional Scaffolding" }]}
       characteristics={[

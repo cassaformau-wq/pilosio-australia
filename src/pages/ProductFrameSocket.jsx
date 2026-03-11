@@ -6,7 +6,7 @@ export default function ProductFrameSocket() {
       category="Scaffolding"
       title="Frame Scaffolding (Socket)"
       subtitle="PE — High performance frame scaffolding with bushes"
-      heroImg="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/PE105180-cover.jpg"
       breadcrumb={[{ label: "Frame Scaffolding (Socket)" }]}
       characteristics={[
         "The PE bushing-type frame scaffolding is a high-performance system engineered for robust support structures.",

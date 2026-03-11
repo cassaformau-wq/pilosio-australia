@@ -6,7 +6,7 @@ export default function ProductMobileTowers() {
       category="Scaffolding"
       title="Mobile Towers"
       subtitle="Lightweight, mobile aluminium towers for low-height indoor and outdoor work"
-      heroImg="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/Quick-System-cover.jpg"
       breadcrumb={[{ label: "Mobile Towers" }]}
       characteristics={[
         "Mobile and lightweight aluminium structures, easy to assemble and disassemble.",

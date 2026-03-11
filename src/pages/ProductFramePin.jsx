@@ -6,7 +6,7 @@ export default function ProductFramePin() {
       category="Scaffolding"
       title="Frame Scaffolding (Pin)"
       subtitle="K 105-180 — Steel pin frame scaffolding for fast, safe facade work"
-      heroImg="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/12/K-cover2.jpg"
       breadcrumb={[{ label: "Frame Scaffolding (Pin)" }]}
       characteristics={[
         "Steel frame scaffolding with pins welded directly onto the frames, eliminating the need for separate connectors.",

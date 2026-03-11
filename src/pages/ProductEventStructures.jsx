@@ -6,7 +6,7 @@ export default function ProductEventStructures() {
       category="Suspended Structures"
       title="Event Structures"
       subtitle="Specialised temporary structures for concerts, exhibitions, and large-scale events"
-      heroImg="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/PALCHi-cover.jpg"
       breadcrumb={[{ label: "Event Structures" }]}
       characteristics={[
         "Specialised temporary structures engineered for events, concerts, exhibitions, and public gatherings.",

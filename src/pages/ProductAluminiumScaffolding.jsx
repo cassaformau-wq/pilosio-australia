@@ -6,7 +6,7 @@ export default function ProductAluminiumScaffolding() {
       category="Scaffolding"
       title="Aluminium Scaffolding"
       subtitle="Flash 2.2.1 & PLA — Lightweight, innovative aluminium frame scaffolding"
-      heroImg="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1200&q=80"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/09/221-cover.jpg"
       highlight="New"
       breadcrumb={[{ label: "Aluminium Scaffolding" }]}
       characteristics={[
