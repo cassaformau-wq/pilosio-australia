@@ -81,15 +81,12 @@ export default function Home() {
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
           <div className="relative z-10 text-center px-8">
-            {/* Pilosio logo large */}
-            <div className="flex items-center justify-center gap-0 leading-none mb-2">
-              <span className="text-[#e31e24] font-black italic" style={{fontSize:'80px', fontFamily:'Arial Black, sans-serif', lineHeight:1}}>P</span>
-              <span className="text-white font-black uppercase" style={{fontSize:'60px', fontFamily:'Arial Black, sans-serif', letterSpacing:'4px', lineHeight:1}}>ILOSIO</span>
-            </div>
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/2ebbde9a6_image.png"
+              alt="Pilosio Australia"
+              className="h-48 md:h-64 w-auto object-contain mx-auto mb-4"
+            />
             <div className="text-white/60 text-sm tracking-[6px] uppercase mb-6">Australia</div>
-            <div className="inline-block border border-[#e31e24] text-[#e31e24] px-5 py-2 text-xs tracking-widest uppercase font-bold">
-              60+ Years Since 1961
-            </div>
           </div>
         </div>
 
