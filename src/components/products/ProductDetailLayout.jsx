@@ -63,7 +63,7 @@ export default function ProductDetailLayout({
             {characteristics?.length > 0 && (
               <div>
                 <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide mb-6 flex items-center gap-3">
-                  <span className="text-[#e31e24] text-3xl italic font-black">P</span> Characteristics
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-7 w-auto" /> Characteristics
                 </h2>
                 <ul className="space-y-3">
                   {characteristics.map((c, i) => (
@@ -80,7 +80,7 @@ export default function ProductDetailLayout({
             {advantages?.length > 0 && (
               <div>
                 <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide mb-6 flex items-center gap-3">
-                  <span className="text-[#e31e24] text-3xl italic font-black">P</span> Advantages
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-7 w-auto" /> Advantages
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {advantages.map((a, i) => (
@@ -96,7 +96,7 @@ export default function ProductDetailLayout({
             {applications?.length > 0 && (
               <div>
                 <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide mb-6 flex items-center gap-3">
-                  <span className="text-[#e31e24] text-3xl italic font-black">P</span> Applications
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-7 w-auto" /> Applications
                 </h2>
                 <div className="flex flex-wrap gap-2">
                   {applications.map((a, i) => (

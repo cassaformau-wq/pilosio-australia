@@ -156,7 +156,7 @@ export default function Home() {
       {/* Products Grid */}
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-24">
         <div className="flex items-start gap-4 mb-12">
-          <span className="text-[#e31e24] text-5xl font-black italic leading-none">P</span>
+          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-10 w-auto" />
           <h2 className="text-[#0d2b4e] text-3xl md:text-4xl font-black uppercase tracking-wide">Our Products</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-[#e31e24] text-4xl font-black italic">P</span>
+              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
               <h2 className="text-[#0d2b4e] text-2xl md:text-3xl font-black uppercase tracking-wide">
                 Italian Quality, Australian Service
               </h2>

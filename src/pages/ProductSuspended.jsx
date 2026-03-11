@@ -62,7 +62,7 @@ export default function ProductSuspended() {
       {/* Systems Grid */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="flex items-center gap-3 mb-10">
-          <span className="text-[#e31e24] text-4xl italic font-black">P</span>
+          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
           <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide">Our Suspended Systems</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -106,7 +106,7 @@ export default function About() {
           </div>
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <span className="text-[#e31e24] text-4xl font-black italic">P</span>
+              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
               <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide">A Brand in Evolution</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
