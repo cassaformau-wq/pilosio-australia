@@ -6,25 +6,25 @@ const heroTiles = [
   {
     title: "Discover the Flydeck System",
     subtitle: "Innovative suspended platform solution",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg",
     page: "ProductFlydeck",
   },
   {
     title: "IXI Truss: Innovative Aluminium Beam",
     subtitle: "Precision engineered for demanding projects",
-    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2025/07/IXI-Truss-cover.jpg",
     page: "ProductIXITruss",
   },
   {
     title: "Multidirectional Scaffolding",
     subtitle: "Maximum flexibility for any structure",
-    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg",
     page: "ProductMultidirectional",
   },
   {
     title: "Flash 2.2.1 Aluminium Scaffolding",
     subtitle: "Already revolutionary",
-    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/09/221-cover.jpg",
     page: "ProductAluminiumScaffolding",
   },
 ];
@@ -32,13 +32,13 @@ const heroTiles = [
 const categories = [
   {
     label: "Scaffolding",
-    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg",
     href: null,
     page: "Products",
   },
   {
     label: "Formwork",
-    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/PE105180-cover.jpg",
     href: "https://cassaform.com.au",
     page: null,
     logo: "Cassaform",
@@ -46,7 +46,7 @@ const categories = [
   },
   {
     label: "Suspended Structures",
-    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg",
     href: null,
     page: "Products",
   },
@@ -80,7 +80,7 @@ export default function Home() {
         {/* Left big brand panel */}
         <div className="relative bg-[#0d2b4e] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
+            src="https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg"
             alt="scaffolding"
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
@@ -211,7 +211,7 @@ export default function Home() {
           </div>
           <div className="relative">
             <img
-              src="https://images.unsplash.com/photo-1565008576549-57569a49371d?w=700&q=80"
+              src="https://pilosio.com/wp-content/uploads/2022/08/Quick-System-cover.jpg"
               alt="construction site"
               className="w-full h-72 object-cover"
             />
