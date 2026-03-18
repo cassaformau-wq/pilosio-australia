@@ -40,7 +40,7 @@ export default function Layout({ children, currentPageName }) {
           {/* Logo */}
           <Link to={createPageUrl("Home")} className="flex flex-col items-center group">
             <img
-              src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/622e5247a_pilosologo.png"
+              src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/9c6dd1a01_piloso_logo_australia.png"
               alt="Pilosio Australia"
               className="h-12 md:h-14 w-auto object-contain"
             />
