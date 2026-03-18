@@ -13,16 +13,19 @@ const heroTiles = [
     title: "IXI Truss: Innovative Aluminium Beam",
     subtitle: "Precision engineered for demanding projects",
     img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    page: "ProductIXITruss",
   },
   {
     title: "Multidirectional Scaffolding",
     subtitle: "Maximum flexibility for any structure",
     img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&q=80",
+    page: "ProductMultidirectional",
   },
   {
     title: "Flash 2.2.1 Aluminium Scaffolding",
     subtitle: "Already revolutionary",
     img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80",
+    page: "ProductAluminiumScaffolding",
   },
 ];
 
