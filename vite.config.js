@@ -18,3 +18,9 @@ export default defineConfig({
     react(),
   ]
 });
+export default {
+  base: '/pilosio-australia/',
+  build: {
+    outDir: 'dist',
+  },
+}
