@@ -68,9 +68,9 @@ ${form.message}
 
           <div className="space-y-5">
             {[
-              { icon: Phone, label: "Phone", value: "1800 PILOSIO" },
-              { icon: Mail, label: "Email", value: "info@pilosioaustralia.com.au" },
-              { icon: MapPin, label: "Office", value: "Sydney, NSW, Australia" },
+              { icon: Phone, label: "Phone", value: "1300 745 674" },
+              { icon: Mail, label: "Email", value: "contact@pilosio.com.au" },
+              { icon: MapPin, label: "Office", value: "9 Barclay Rd, Derrimut VIC 3026" },
               { icon: Clock, label: "Hours", value: "Mon–Fri, 8am – 5pm AEST" },
             ].map(({ icon: Icon, label, value }) => (
               <div key={label} className="flex items-start gap-4">
