@@ -112,9 +112,9 @@ export default function Layout({ children, currentPageName }) {
           <div>
             <h4 className="font-bold uppercase tracking-wider mb-4 text-sm">Contact Us</h4>
             <ul className="space-y-2 text-white/70 text-sm">
-              <li>📞 1800 PILOSIO</li>
-              <li>✉️ info@pilosioaustralia.com.au</li>
-              <li>📍 Sydney, NSW, Australia</li>
+              <li>📞 1300 745 674</li>
+              <li>✉️ contact@pilosio.com.au</li>
+              <li>📍 9 Barclay Rd, Derrimut VIC 3026</li>
             </ul>
             <div className="mt-4 pt-4 border-t border-white/10">
               <p className="text-white/40 text-xs mb-1">Formwork solutions by</p>
