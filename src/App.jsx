@@ -68,9 +68,9 @@ function App() {
   return (
     <AuthProvider>
       <QueryClientProvider client={queryClientInstance}>
-        <Router>
+        <Router basename="/pilosio-australia">
           <AuthenticatedApp />
-        </Router>
+        <Router basename="/pilosio-australia">
         <Toaster />
       </QueryClientProvider>
     </AuthProvider>
