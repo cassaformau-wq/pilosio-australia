@@ -63,13 +63,6 @@ const products = [
   { name: "IXI Aluminium Truss", page: "ProductIXITruss" },
   { name: "Suspended Structures", page: "ProductSuspended" },
   { name: "Event Structures", page: "ProductEventStructures" },
-  { name: "Service Stairs", page: "Products" },
-  { name: "Electric Scaffolding", page: "Products" },
-  { name: "Site Protections", page: "Products" },
-  { name: "Roofing Systems", page: "Products" },
-  { name: "Mobile Scaffolding Trolley", page: "Products" },
-  { name: "Trench Shielding", page: "Products" },
-  { name: "Transport Platform", page: "Products" },
 ];
 
 export default function Home() {
