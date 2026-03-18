@@ -93,22 +93,33 @@ export default function Home() {
 
         {/* Right 2x2 tiles */}
         <div className="grid grid-cols-2 grid-rows-2">
-          {heroTiles.map((tile, i) => (
-            <div key={i} className="relative overflow-hidden group cursor-pointer" style={{ minHeight: "200px" }}>
-              <img
-                src={tile.img}
-                alt={tile.title}
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
-                <p className="text-white text-xs md:text-sm font-bold leading-tight">{tile.title}</p>
+          {heroTiles.map((tile, i) => {
+            const inner = (
+              <>
+                <img
+                  src={tile.img}
+                  alt={tile.title}
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                  <p className="text-white text-xs md:text-sm font-bold leading-tight">{tile.title}</p>
+                </div>
+                <div className="absolute top-3 right-3 bg-[#e31e24] rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ArrowUpRight className="w-3 h-3 text-white" />
+                </div>
+              </>
+            );
+            return tile.page ? (
+              <Link key={i} to={createPageUrl(tile.page)} className="relative overflow-hidden group cursor-pointer" style={{ minHeight: "200px" }}>
+                {inner}
+              </Link>
+            ) : (
+              <div key={i} className="relative overflow-hidden group cursor-pointer" style={{ minHeight: "200px" }}>
+                {inner}
               </div>
-              <div className="absolute top-3 right-3 bg-[#e31e24] rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ArrowUpRight className="w-3 h-3 text-white" />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
