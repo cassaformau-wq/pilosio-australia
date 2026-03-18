@@ -6,29 +6,29 @@ const heroTiles = [
   {
     title: "Discover the Flydeck System",
     subtitle: "Innovative suspended platform solution",
-    img: "https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg",
+    img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
   },
   {
     title: "IXI Truss: Innovative Aluminium Beam",
     subtitle: "Precision engineered for demanding projects",
-    img: "https://pilosio.com/wp-content/uploads/2025/07/IXI-Truss-cover.jpg",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
   },
   {
     title: "Multidirectional Scaffolding",
     subtitle: "Maximum flexibility for any structure",
-    img: "https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=800&q=80",
   },
   {
     title: "Flash 2.2.1 Aluminium Scaffolding",
     subtitle: "Already revolutionary",
-    img: "https://pilosio.com/wp-content/uploads/2022/09/221-cover.jpg",
+    img: "https://images.unsplash.com/photo-1565008576549-57569a49371d?w=800&q=80",
   },
 ];
 
 const categories = [
   {
     label: "Scaffolding",
-    img: "https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg",
+    img: "https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=600&q=80",
     href: null,
     page: "Products",
   },
@@ -42,7 +42,7 @@ const categories = [
   },
   {
     label: "Suspended Structures",
-    img: "https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg",
+    img: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
     href: null,
     page: "Products",
   },

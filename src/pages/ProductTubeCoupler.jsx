@@ -6,7 +6,7 @@ export default function ProductTubeCoupler() {
       category="Scaffolding"
       title="Tube & Coupler"
       subtitle="Traditional scaffolding with maximum adaptability for complex configurations"
-      heroImg="https://pilosio.com/wp-content/uploads/2022/08/Cover-TG.jpg"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg"
       breadcrumb={[{ label: "Tube & Coupler" }]}
       characteristics={[
         "Traditional scaffolding system offering the highest flexibility and adaptability of any scaffold type.",
