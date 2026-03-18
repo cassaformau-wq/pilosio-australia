@@ -133,7 +133,7 @@ export default function Home() {
               <div className="absolute inset-0 flex flex-col items-center justify-end pb-8">
                 {cat.external ? (
                   /* Cassaform logo for Formwork */
-                  <div className="bg-white mb-3 shadow-lg overflow-hidden" style={{lineHeight: 0}}>
+                  <div className="bg-white mb-3 shadow-lg overflow-hidden" style={{lineHeight: 0, padding: 0, fontSize: 0}}>
                     <img src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/85e4234e5_LogoTaglinehighresMay2024.png" alt="Cassaform" className="h-20 w-auto block" style={{display: 'block'}} />
                   </div>
                 ) : (
