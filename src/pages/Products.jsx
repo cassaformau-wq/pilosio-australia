@@ -40,7 +40,7 @@ const products = [
     name: "Tube & Coupler",
     category: "Scaffolding",
     desc: "Traditional scaffolding system that allows high flexibility and adaptability, suitable for complex configurations and variable work environments.",
-    img: "https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg",
+    img: "https://pilosio.com/wp-content/uploads/2022/08/Cover-TG.jpg",
     page: "ProductTubeCoupler",
   },
   {
