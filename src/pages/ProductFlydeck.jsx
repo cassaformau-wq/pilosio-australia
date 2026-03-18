@@ -6,7 +6,7 @@ export default function ProductFlydeck() {
       category="Suspended Structures"
       title="Flydeck System"
       subtitle="Patented soffit suspended platform — faster, safer bridge and structure maintenance"
-      heroImg="https://pilosio.com/wp-content/uploads/2022/08/FLYDECK-cover.jpg"
+      heroImg="https://pilosio.com/wp-content/uploads/2022/08/Viadotto-Acqualonga-1.jpg"
       highlight="Patented"
       breadcrumb={[{ label: "Flydeck System" }]}
       characteristics={[
