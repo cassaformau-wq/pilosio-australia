@@ -24,7 +24,7 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
     await base44.integrations.Core.SendEmail({
-      to: "info@pilosioaustralia.com.au",
+      to: "contact@pilosio.com.au",
       subject: `New Enquiry from ${form.name} — ${form.product || "General"}`,
       body: `
 Name: ${form.name}
