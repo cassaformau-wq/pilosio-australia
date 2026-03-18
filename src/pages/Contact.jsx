@@ -22,22 +22,13 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    await base44.integrations.Core.SendEmail({
-      to: "contact@pilosio.com.au",
-      subject: `New Enquiry from ${form.name} — ${form.product || "General"}`,
-      body: `
-Name: ${form.name}
-Email: ${form.email}
-Phone: ${form.phone}
-Company: ${form.company}
-Product of Interest: ${form.product}
-
-Message:
-${form.message}
-      `.trim(),
+    const res = await fetch("https://formspree.io/f/xwvrwgwp", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(form),
     });
     setLoading(false);
-    setSent(true);
+    if (res.ok) setSent(true);
   };
 
   return (
