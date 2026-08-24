@@ -49,11 +49,7 @@ export default function Layout({ children, currentPageName }) {
               alt="Pilosio Australia"
               className="h-12 md:h-14 w-auto object-contain"
             />
-            <img
-              src="https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/7ec8ebba8_60.png"
-              alt="60+ Years"
-              className="h-10 md:h-12 w-auto object-contain hidden sm:block"
-            />
+
           </Link>
 
           {/* Right */}
