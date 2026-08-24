@@ -128,10 +128,9 @@ export default function Home() {
                 {cat.external ? (
                   /* Cassaform logo for Formwork */
                   <img
-                    src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/3a332b6c0_image.png"
+                    src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/821cf858c_generated_image.png"
                     alt="Cassaform"
                     className="h-12 w-auto block mb-2"
-                    style={{ display: 'block', filter: 'brightness(0) invert(1)' }}
                   />
                 ) : (
                   <img src={RED_P} alt="P" className="h-10 w-auto mb-2" />
