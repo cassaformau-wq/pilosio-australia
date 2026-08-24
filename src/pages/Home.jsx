@@ -76,23 +76,9 @@ export default function Home() {
         <div className="relative bg-[#023569] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
           <img
             src="https://pilosio.com/wp-content/uploads/2022/09/SL11.png"
-            alt="scaffolding"
-            className="absolute inset-0 w-full h-full object-cover opacity-20"
+            alt="Pilosio Australia"
+            className="relative z-10 w-full h-full object-contain p-6 md:p-10"
           />
-          <div className="relative z-10 text-center px-8 flex flex-col items-center">
-            <img
-              src={RED_P}
-              alt="Pilosio"
-              className="h-28 md:h-36 w-auto object-contain mx-auto mb-4"
-            />
-            <div className="text-white text-2xl md:text-3xl font-black tracking-[4px] uppercase mb-2">Pilosio</div>
-            <div className="text-white/60 text-sm tracking-[6px] uppercase mb-6">Australia</div>
-            <img
-              src="https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/97e35d78c_60bianco.png"
-              alt="60+ Years"
-              className="h-14 md:h-16 w-auto object-contain"
-            />
-          </div>
         </div>
 
         {/* Right 2x2 tiles */}
