@@ -73,7 +73,7 @@ export default function Home() {
       {/* Hero Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {/* Left big brand panel */}
-        <div className="relative bg-[#023569] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
+        <div className="relative bg-white flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
           <img
             src="https://pilosio.com/wp-content/uploads/2022/09/SL11.png"
             alt="Pilosio Australia"
@@ -128,7 +128,7 @@ export default function Home() {
                 {cat.external ? (
                   /* Cassaform logo for Formwork */
                   <div className="bg-white mb-3 shadow-lg overflow-hidden" style={{lineHeight: 0, padding: 0, fontSize: 0}}>
-                    <img src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/85e4234e5_LogoTaglinehighresMay2024.png" alt="Cassaform" className="h-20 w-auto block" style={{display: 'block'}} />
+                    <img src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/3a332b6c0_image.png" alt="Cassaform" className="h-20 w-auto block" style={{display: 'block'}} />
                   </div>
                 ) : (
                   <img src={RED_P} alt="P" className="h-10 w-auto mb-2" />
