@@ -75,7 +75,7 @@ export default function Home() {
         {/* Left big brand panel */}
         <div className="relative bg-[#023569] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
           <img
-            src="https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg"
+            src="https://pilosio.com/wp-content/uploads/2022/09/SL11.png"
             alt="scaffolding"
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
