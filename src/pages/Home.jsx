@@ -114,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Category Cards */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-0">
+      <section className="grid grid-cols-1 md:grid-cols-3 gap-2 bg-white p-2">
         {categories.map((cat) => {
           const inner = (
             <div className="relative group overflow-hidden" style={{ minHeight: "260px" }}>
@@ -131,7 +131,7 @@ export default function Home() {
                     src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/3a332b6c0_image.png"
                     alt="Cassaform"
                     className="h-12 w-auto block mb-2"
-                    style={{ mixBlendMode: 'screen', filter: 'invert(1) brightness(1.5)' }}
+                    style={{ mixBlendMode: 'screen', filter: 'invert(1) saturate(0) brightness(2)' }}
                   />
                 ) : (
                   <img src={RED_P} alt="P" className="h-10 w-auto mb-2" />
