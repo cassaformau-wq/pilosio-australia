@@ -82,7 +82,7 @@ export default function Home() {
         </div>
 
         {/* Right 2x2 tiles */}
-        <div className="grid grid-cols-2 grid-rows-2 gap-2 bg-white p-2">
+        <div className="grid grid-cols-2 grid-rows-2 gap-2 bg-white px-2 pt-2">
           {heroTiles.map((tile, i) => {
             const inner = (
               <>
