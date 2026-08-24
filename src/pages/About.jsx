@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowUpRight } from "lucide-react";
 
+const RED_P = "https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/0cd0cfb30_p-rossa.png";
+
 const values = [
   {
     title: "Out-of-the-Box Innovation",
@@ -25,7 +27,7 @@ export default function About() {
   return (
     <div>
       {/* Page Header */}
-      <div className="bg-[#0d2b4e] text-white py-12 px-4">
+      <div className="bg-[#023569] text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-white/50 text-sm mb-2">
             <Link to={createPageUrl("Home")} className="hover:text-white">Home</Link> / About Us
@@ -52,8 +54,8 @@ export default function About() {
             alt="Pilosio history"
             className="w-full h-80 object-cover grayscale"
           />
-          <div className="absolute -bottom-4 -right-4 bg-[#0d2b4e] text-white px-6 py-4">
-            <div className="text-4xl font-black text-[#e31e24]">1961</div>
+          <div className="absolute -bottom-4 -right-4 bg-[#023569] text-white px-6 py-4">
+            <div className="text-4xl font-black text-white">1961</div>
             <div className="text-xs uppercase tracking-widest font-semibold">Founded</div>
           </div>
         </div>
@@ -63,13 +65,13 @@ export default function About() {
       <section className="bg-[#f5f7fa] py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-3 mb-12">
-            <span className="text-[#e31e24] text-4xl font-black italic">P</span>
-            <h2 className="text-[#0d2b4e] text-2xl md:text-3xl font-black uppercase tracking-wide">Our Values</h2>
+            <img src={RED_P} alt="P" className="h-9 w-auto" />
+            <h2 className="text-[#023569] text-2xl md:text-3xl font-black uppercase tracking-wide">Our Values</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((v) => (
-              <div key={v.title} className="bg-white p-8 border-l-4 border-[#e31e24]">
-                <h3 className="text-[#0d2b4e] font-black uppercase tracking-wide text-lg mb-3">{v.title}</h3>
+              <div key={v.title} className="bg-white p-8 border-l-4 border-[#023569]">
+                <h3 className="text-[#023569] font-black uppercase tracking-wide text-lg mb-3">{v.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{v.desc}</p>
               </div>
             ))}
@@ -78,7 +80,7 @@ export default function About() {
       </section>
 
       {/* Stats */}
-      <section className="bg-[#0d2b4e] text-white py-16">
+      <section className="bg-[#023569] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             { num: "60+", label: "Years of Experience" },
@@ -87,7 +89,7 @@ export default function About() {
             { num: "Global", label: "Reach & Standards" },
           ].map((s) => (
             <div key={s.label}>
-              <div className="text-3xl md:text-4xl font-black text-[#e31e24] mb-2">{s.num}</div>
+              <div className="text-3xl md:text-4xl font-black text-white mb-2">{s.num}</div>
               <div className="text-white/70 text-sm uppercase tracking-wider">{s.label}</div>
             </div>
           ))}
@@ -106,8 +108,8 @@ export default function About() {
           </div>
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
-              <h2 className="text-[#0d2b4e] text-2xl font-black uppercase tracking-wide">A Brand in Evolution</h2>
+              <img src={RED_P} alt="P" className="h-8 w-auto" />
+              <h2 className="text-[#023569] text-2xl font-black uppercase tracking-wide">A Brand in Evolution</h2>
             </div>
             <p className="text-gray-600 leading-relaxed mb-4">
               Following a significant recapitalisation, Pilosio has confirmed its commitment to providing a complete service 
@@ -120,7 +122,7 @@ export default function About() {
             </p>
             <Link
               to={createPageUrl("Contact")}
-              className="inline-flex items-center gap-2 bg-[#e31e24] text-white px-6 py-3 font-bold uppercase tracking-wider text-sm hover:bg-[#c01a1f] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#023569] text-white px-6 py-3 font-bold uppercase tracking-wider text-sm hover:bg-[#012a52] transition-colors"
             >
               Get In Touch <ArrowUpRight className="w-4 h-4" />
             </Link>

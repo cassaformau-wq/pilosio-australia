@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
 
+const RED_P = "https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/0cd0cfb30_p-rossa.png";
+
 export default function Contact() {
   const [form, setForm] = useState({
     name: "",
@@ -34,7 +36,7 @@ export default function Contact() {
   return (
     <div>
       {/* Header */}
-      <div className="bg-[#0d2b4e] text-white py-12 px-4">
+      <div className="bg-[#023569] text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-white/50 text-sm mb-2">
             <Link to={createPageUrl("Home")} className="hover:text-white">Home</Link> / Contact
@@ -48,8 +50,8 @@ export default function Contact() {
         <div className="lg:col-span-1 space-y-8">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
-              <h2 className="text-[#0d2b4e] text-xl font-black uppercase tracking-wide">Get In Touch</h2>
+              <img src={RED_P} alt="P" className="h-8 w-auto" />
+              <h2 className="text-[#023569] text-xl font-black uppercase tracking-wide">Get In Touch</h2>
             </div>
             <p className="text-gray-600 leading-relaxed">
               Our Australian team is ready to help with product enquiries, technical support, quotes, and project planning.
@@ -64,19 +66,19 @@ export default function Contact() {
               { icon: Clock, label: "Hours", value: "Mon–Fri, 8am – 5pm AEST" },
             ].map(({ icon: Icon, label, value }) => (
               <div key={label} className="flex items-start gap-4">
-                <div className="bg-[#e31e24] p-2.5 flex-shrink-0">
+                <div className="bg-[#023569] p-2.5 flex-shrink-0">
                   <Icon className="w-4 h-4 text-white" />
                 </div>
                 <div>
                   <div className="text-xs text-gray-400 uppercase tracking-wider font-semibold">{label}</div>
-                  <div className="text-[#0d2b4e] font-semibold">{value}</div>
+                  <div className="text-[#023569] font-semibold">{value}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="bg-[#f5f7fa] p-6 border-l-4 border-[#e31e24]">
-            <h3 className="text-[#0d2b4e] font-black uppercase text-sm tracking-wide mb-2">Products We Supply</h3>
+          <div className="bg-[#f5f7fa] p-6 border-l-4 border-[#023569]">
+            <h3 className="text-[#023569] font-black uppercase text-sm tracking-wide mb-2">Products We Supply</h3>
             <ul className="text-gray-600 text-sm space-y-1">
               <li>• Scaffolding Systems</li>
               <li>• Formwork Solutions</li>
@@ -91,15 +93,15 @@ export default function Contact() {
         <div className="lg:col-span-2">
           {sent ? (
             <div className="flex flex-col items-center justify-center h-full min-h-[400px] text-center">
-              <CheckCircle className="w-16 h-16 text-[#e31e24] mb-6" />
-              <h2 className="text-2xl font-black uppercase tracking-wide text-[#0d2b4e] mb-3">Enquiry Sent!</h2>
+              <CheckCircle className="w-16 h-16 text-[#023569] mb-6" />
+              <h2 className="text-2xl font-black uppercase tracking-wide text-[#023569] mb-3">Enquiry Sent!</h2>
               <p className="text-gray-600 max-w-md">
                 Thank you for reaching out. Our Australian team will get back to you within 1–2 business days.
               </p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
-              <h2 className="text-[#0d2b4e] text-xl font-black uppercase tracking-wide mb-6">Send an Enquiry</h2>
+              <h2 className="text-[#023569] text-xl font-black uppercase tracking-wide mb-6">Send an Enquiry</h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
@@ -111,7 +113,7 @@ export default function Contact() {
                     required
                     value={form.name}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm"
+                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm"
                     placeholder="John Smith"
                   />
                 </div>
@@ -125,7 +127,7 @@ export default function Contact() {
                     required
                     value={form.email}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm"
+                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm"
                     placeholder="john@company.com.au"
                   />
                 </div>
@@ -137,7 +139,7 @@ export default function Contact() {
                     name="phone"
                     value={form.phone}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm"
+                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm"
                     placeholder="04XX XXX XXX"
                   />
                 </div>
@@ -149,7 +151,7 @@ export default function Contact() {
                     name="company"
                     value={form.company}
                     onChange={handleChange}
-                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm"
+                    className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm"
                     placeholder="Your Company Pty Ltd"
                   />
                 </div>
@@ -163,7 +165,7 @@ export default function Contact() {
                   name="product"
                   value={form.product}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm bg-white"
+                  className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm bg-white"
                 >
                   <option value="">Select a product category...</option>
                   <option value="Scaffolding">Scaffolding</option>
@@ -185,7 +187,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   rows={5}
-                  className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#e31e24] text-sm resize-none"
+                  className="w-full border border-gray-300 px-4 py-3 focus:outline-none focus:border-[#023569] text-sm resize-none"
                   placeholder="Tell us about your project or product requirements..."
                 />
               </div>
@@ -193,7 +195,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full bg-[#e31e24] text-white py-4 font-black uppercase tracking-widest hover:bg-[#c01a1f] transition-colors disabled:opacity-60"
+                className="w-full bg-[#023569] text-white py-4 font-black uppercase tracking-widest hover:bg-[#012a52] transition-colors disabled:opacity-60"
               >
                 {loading ? "Sending..." : "Send Enquiry"}
               </button>

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
 
+const RED_P = "https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/0cd0cfb30_p-rossa.png";
+
 const heroTiles = [
   {
     title: "Discover the Flydeck System",
@@ -71,19 +73,25 @@ export default function Home() {
       {/* Hero Grid */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {/* Left big brand panel */}
-        <div className="relative bg-[#0d2b4e] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
+        <div className="relative bg-[#023569] flex items-center justify-center min-h-[340px] md:min-h-[560px] overflow-hidden">
           <img
             src="https://pilosio.com/wp-content/uploads/2022/08/MP83-cover.jpg"
             alt="scaffolding"
             className="absolute inset-0 w-full h-full object-cover opacity-20"
           />
-          <div className="relative z-10 text-center px-8">
+          <div className="relative z-10 text-center px-8 flex flex-col items-center">
             <img
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/2ebbde9a6_image.png"
-              alt="Pilosio Australia"
-              className="h-48 md:h-64 w-auto object-contain mx-auto mb-4"
+              src={RED_P}
+              alt="Pilosio"
+              className="h-28 md:h-36 w-auto object-contain mx-auto mb-4"
             />
+            <div className="text-white text-2xl md:text-3xl font-black tracking-[4px] uppercase mb-2">Pilosio</div>
             <div className="text-white/60 text-sm tracking-[6px] uppercase mb-6">Australia</div>
+            <img
+              src="https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/97e35d78c_60bianco.png"
+              alt="60+ Years"
+              className="h-14 md:h-16 w-auto object-contain"
+            />
           </div>
         </div>
 
@@ -101,7 +109,7 @@ export default function Home() {
                 <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
                   <p className="text-white text-xs md:text-sm font-bold leading-tight">{tile.title}</p>
                 </div>
-                <div className="absolute top-3 right-3 bg-[#e31e24] rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                <div className="absolute top-3 right-3 bg-[#023569] rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   <ArrowUpRight className="w-3 h-3 text-white" />
                 </div>
               </>
@@ -129,7 +137,7 @@ export default function Home() {
                 alt={cat.label}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-[#0d2b4e]/60 group-hover:bg-[#0d2b4e]/70 transition-colors" />
+              <div className="absolute inset-0 bg-[#023569]/60 group-hover:bg-[#023569]/70 transition-colors" />
               <div className="absolute inset-0 flex flex-col items-center justify-end pb-8">
                 {cat.external ? (
                   /* Cassaform logo for Formwork */
@@ -137,7 +145,7 @@ export default function Home() {
                     <img src="https://media.base44.com/images/public/699f868e9f3fb5159e286770/85e4234e5_LogoTaglinehighresMay2024.png" alt="Cassaform" className="h-20 w-auto block" style={{display: 'block'}} />
                   </div>
                 ) : (
-                  <div className="text-[#e31e24] text-3xl font-black italic mb-2">P</div>
+                  <img src={RED_P} alt="P" className="h-10 w-auto mb-2" />
                 )}
                 <span className="text-white font-black uppercase tracking-widest text-lg md:text-xl text-center px-4">
                   {cat.label}
@@ -145,7 +153,7 @@ export default function Home() {
                 {cat.external && (
                   <span className="text-white/70 text-xs mt-1 tracking-wider">cassaform.com.au ↗</span>
                 )}
-                <div className="mt-3 w-8 h-0.5 bg-[#e31e24]" />
+                <div className="mt-3 w-8 h-0.5 bg-white" />
               </div>
             </div>
           );
@@ -164,18 +172,18 @@ export default function Home() {
       {/* Products Grid */}
       <section className="max-w-7xl mx-auto px-4 py-16 md:py-24">
         <div className="flex items-start gap-4 mb-12">
-          <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-10 w-auto" />
-          <h2 className="text-[#0d2b4e] text-3xl md:text-4xl font-black uppercase tracking-wide">Our Products</h2>
+          <img src={RED_P} alt="P" className="h-10 w-auto" />
+          <h2 className="text-[#023569] text-3xl md:text-4xl font-black uppercase tracking-wide">Our Products</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           {products.map((p) => (
             <Link
               key={p.name}
               to={createPageUrl(p.page)}
-              className="border border-gray-200 hover:border-[#e31e24] hover:bg-red-50 transition-all p-4 flex items-center justify-between group"
+              className="border border-gray-200 hover:border-[#023569] hover:bg-blue-50 transition-all p-4 flex items-center justify-between group"
             >
-              <span className="text-[#0d2b4e] text-sm font-semibold group-hover:text-[#e31e24] transition-colors">{p.name}</span>
-              <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#e31e24] flex-shrink-0" />
+              <span className="text-[#023569] text-sm font-semibold group-hover:text-[#012a52] transition-colors">{p.name}</span>
+              <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#012a52] flex-shrink-0" />
             </Link>
           ))}
         </div>
@@ -186,8 +194,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
-              <h2 className="text-[#0d2b4e] text-2xl md:text-3xl font-black uppercase tracking-wide">
+              <img src={RED_P} alt="P" className="h-8 w-auto" />
+              <h2 className="text-[#023569] text-2xl md:text-3xl font-black uppercase tracking-wide">
                 Italian Quality, Australian Service
               </h2>
             </div>
@@ -197,7 +205,7 @@ export default function Home() {
             </p>
             <Link
               to={createPageUrl("About")}
-              className="inline-flex items-center gap-2 bg-[#e31e24] text-white px-6 py-3 font-bold uppercase tracking-wider text-sm hover:bg-[#c01a1f] transition-colors"
+              className="inline-flex items-center gap-2 bg-[#023569] text-white px-6 py-3 font-bold uppercase tracking-wider text-sm hover:bg-[#012a52] transition-colors"
             >
               About Us <ArrowUpRight className="w-4 h-4" />
             </Link>
@@ -208,7 +216,7 @@ export default function Home() {
               alt="construction site"
               className="w-full h-72 object-cover"
             />
-            <div className="absolute -bottom-4 -left-4 bg-[#e31e24] text-white px-5 py-3">
+            <div className="absolute -bottom-4 -left-4 bg-white text-[#023569] px-5 py-3 shadow-lg">
               <div className="text-3xl font-black">60+</div>
               <div className="text-xs uppercase tracking-widest font-semibold">Years Since 1961</div>
             </div>
@@ -217,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* CTA Banner */}
-      <section className="bg-[#0d2b4e] text-white py-14 text-center px-4">
+      <section className="bg-[#023569] text-white py-14 text-center px-4">
         <h2 className="text-2xl md:text-4xl font-black uppercase tracking-wide mb-4">
           Ready to Start Your Project?
         </h2>
@@ -226,7 +234,7 @@ export default function Home() {
         </p>
         <Link
           to={createPageUrl("Contact")}
-          className="inline-flex items-center gap-2 bg-[#e31e24] text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-[#c01a1f] transition-colors"
+          className="inline-flex items-center gap-2 bg-white text-[#023569] px-8 py-4 font-bold uppercase tracking-wider hover:bg-gray-100 transition-colors"
         >
           Contact Us <ArrowUpRight className="w-5 h-5" />
         </Link>

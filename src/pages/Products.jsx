@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { ChevronRight } from "lucide-react";
 
+const RED_P = "https://base44.app/api/apps/699f868e9f3fb5159e286770/files/mp/public/699f868e9f3fb5159e286770/0cd0cfb30_p-rossa.png";
+
 const categories = ["All", "Scaffolding", "Suspended Structures"];
 
 const products = [
@@ -106,7 +108,7 @@ export default function Products() {
   return (
     <div>
       {/* Header */}
-      <div className="bg-[#0d2b4e] text-white py-12 px-4">
+      <div className="bg-[#023569] text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="text-white/50 text-sm mb-2">
             <Link to={createPageUrl("Home")} className="hover:text-white">Home</Link> / Products
@@ -127,11 +129,11 @@ export default function Products() {
             href="https://cassaform.com.au"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center gap-4 border-2 border-[#0d2b4e] px-5 py-3 hover:bg-[#0d2b4e] group transition-colors"
+            className="flex-shrink-0 flex items-center gap-4 border-2 border-[#023569] px-5 py-3 hover:bg-[#023569] group transition-colors"
           >
             <div className="flex flex-col">
               <span className="text-xs text-gray-400 uppercase tracking-wider group-hover:text-white/60 transition-colors">Looking for Formwork?</span>
-              <span className="text-[#0d2b4e] font-black text-lg tracking-tight group-hover:text-white transition-colors">Cassaform ↗</span>
+              <span className="text-[#023569] font-black text-lg tracking-tight group-hover:text-white transition-colors">Cassaform ↗</span>
               <span className="text-xs text-gray-400 group-hover:text-white/60 transition-colors">cassaform.com.au</span>
             </div>
           </a>
@@ -147,8 +149,8 @@ export default function Products() {
               onClick={() => setActiveCategory(cat)}
               className={`px-6 py-4 font-bold uppercase tracking-wider text-sm whitespace-nowrap border-b-2 transition-colors ${
                 activeCategory === cat
-                  ? "border-[#e31e24] text-[#e31e24] bg-white"
-                  : "border-transparent text-gray-500 hover:text-[#0d2b4e]"
+                  ? "border-[#023569] text-[#023569] bg-white"
+                  : "border-transparent text-gray-500 hover:text-[#023569]"
               }`}
             >
               {cat}
@@ -170,16 +172,16 @@ export default function Products() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {product.highlight && (
-                    <div className="absolute top-3 left-3 bg-[#e31e24] text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
+                    <div className="absolute top-3 left-3 bg-[#023569] text-white text-xs font-bold px-2 py-1 uppercase tracking-wider">
                       {product.highlight}
                     </div>
                   )}
                 </div>
                 <div className="p-5 flex flex-col flex-1">
-                  <div className="text-xs text-[#e31e24] font-bold uppercase tracking-wider mb-1">{product.category}</div>
-                  <h3 className="text-[#0d2b4e] font-black uppercase tracking-wide text-sm mb-2">{product.name}</h3>
+                  <div className="text-xs text-[#023569] font-bold uppercase tracking-wider mb-1">{product.category}</div>
+                  <h3 className="text-[#023569] font-black uppercase tracking-wide text-sm mb-2">{product.name}</h3>
                   <p className="text-gray-500 text-xs leading-relaxed flex-1">{product.desc}</p>
-                  <div className="mt-4 flex items-center gap-1 text-[#e31e24] text-xs font-bold uppercase tracking-wider group-hover:gap-2 transition-all">
+                  <div className="mt-4 flex items-center gap-1 text-[#023569] text-xs font-bold uppercase tracking-wider group-hover:gap-2 transition-all">
                     {product.page ? "Discover More" : "Enquire Now"} <ChevronRight className="w-3 h-3" />
                   </div>
                 </div>
@@ -189,7 +191,7 @@ export default function Products() {
               <Link
                 key={product.name}
                 to={createPageUrl(product.page)}
-                className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
+                className="group border border-gray-200 hover:border-[#023569] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
               >
                 {cardInner}
               </Link>
@@ -197,7 +199,7 @@ export default function Products() {
               <Link
                 key={product.name}
                 to={createPageUrl("Contact")}
-                className="group border border-gray-200 hover:border-[#e31e24] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
+                className="group border border-gray-200 hover:border-[#023569] hover:shadow-lg transition-all overflow-hidden bg-white flex flex-col"
               >
                 {cardInner}
               </Link>
@@ -207,10 +209,10 @@ export default function Products() {
       </div>
 
       {/* Certifications */}
-      <section className="bg-[#0d2b4e] text-white py-12 px-4">
+      <section className="bg-[#023569] text-white py-12 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-3 mb-8">
-            <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/699f868e9f3fb5159e286770/23f60a455_image.png" alt="P" className="h-8 w-auto" />
+            <img src={RED_P} alt="P" className="h-8 w-auto" />
             <h2 className="text-white text-xl md:text-2xl font-black uppercase tracking-wide">Certifications & Standards</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -220,7 +222,7 @@ export default function Products() {
               { title: "Quality Manufacturing", desc: "90% of components are manufactured in-house at Pilosio's 45,000m² facility in Udine, Italy." },
             ].map((c) => (
               <div key={c.title} className="border border-white/20 p-6">
-                <h3 className="font-black uppercase tracking-wide text-sm mb-3 text-[#e31e24]">{c.title}</h3>
+                <h3 className="font-black uppercase tracking-wide text-sm mb-3 text-white">{c.title}</h3>
                 <p className="text-white/70 text-sm leading-relaxed">{c.desc}</p>
               </div>
             ))}
